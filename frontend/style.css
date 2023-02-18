@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Mynerve', cursiva; */
+}
+
+body {
+    width: 100%;
+    min-height: 100vh; /* esse teg serve para usar a tela inteira/ a visao do usuario*/
+    background: linear-gradient(90deg, #845EC2, #FF9671);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fafafa;
+    /* border: 1px solid rgb(61, 60, 60); */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    /* cursor: pointer; */
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    background:none;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control i {
+    position: absolute;
+    top: 30px;
+    right: 7px;
+    visibility: hidden;
+}
+
+.form-control small {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.form button {
+    background-color: rgb(185, 55, 211);
+    border: 2px solid rgb(185, 55, 211);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: azure;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* classe de error e sucess 
+    vou atribuir essas classes com o js para os inputs que passarem ou nao passarem pela validação 
+*/
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.success i.gg-check-o {
+    border-color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.gg-danger {
+    border-color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control.error small {
+    border-color: #e74c3c;
+    visibility: visible;
+}
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+/* essa parte serve para tirar a borda do input quando o usuario digitar.*/
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
