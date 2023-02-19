@@ -15,8 +15,6 @@ const passwordConfirm = document.querySelector('#passwordConfirm')
 form.addEventListener('submit', (e) => {
     e.preventDefault() // seerve para nao deixar a pasta recaregar e apagar os dados.
     CheckInputs();
-
-
 })
 
 function CheckInputs() {      // function para validar os inputs
@@ -26,11 +24,13 @@ function CheckInputs() {      // function para validar os inputs
     const emailValue = email.value
     const passwordValue = password.value
     const confirmValue = passwordConfirm.value
+    let valida = 0
 
     if(userNameValue === ""){  // verificar se ele é vazio
         setError(userName, "O nome de usuario é obrigatorio")
     }else {
         setSuccess(userName)
+        valida = valida + 1
     }
 
     if(emailValue === ""){ 
@@ -39,6 +39,7 @@ function CheckInputs() {      // function para validar os inputs
         setError(email, "Insira um email valido")
     }else {
         setSuccess(email)
+        valida = valida + 1
     }
 
     if(passwordValue === ""){
@@ -47,6 +48,7 @@ function CheckInputs() {      // function para validar os inputs
         setError(password, "A senha deve ter caracteres especiais, letra maiuscula numero e no minimo 8 digitos ")
     }else {
         setSuccess(password)
+        valida = valida + 1
     }
 
     if(confirmValue === ""){
@@ -55,10 +57,19 @@ function CheckInputs() {      // function para validar os inputs
         setError(passwordConfirm, " As senhas não são iguais ")
     }else {
         setSuccess(passwordConfirm)
+        valida = valida + 1
+    }
+    
+// aqui vamos validar os acertos se ele passou nos testes ele sera direciona para outra pagina
+    if(valida == 4){
+        // location serve para manda o usuario para o lugar q a gente quer o href é a url
+       location.href = 'login.html'
     }
         
-
+    
 }
+
+
 
 // nessa function vamos receber dois parametros o input para saber de quem é o erro e a mensagem para printar
 function setError(input, message){  

@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- links dos icones -->
     <link href='https://css.gg/danger.css' rel='stylesheet'>
     <link href='https://css.gg/check-o.css' rel='stylesheet'>
+    <link href='https://css.gg/arrow-left-o.css' rel='stylesheet'>
     <!-- links das fontes de letra-->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +22,18 @@
 
     <div class="container">
         <div class="header">
-            <h1>Cadastro</h1>
+            <a href="login.html"><i class="gg-arrow-left-o" id="arrow"></i></a>
+            <h1>Cadastre-se</h1>
         </div>
-
+        <hr>
         <form id="form" class="form">
 
             <div class="form-control">
-                <label for="userName">Nome de usuário</label> <!-- texto em cima do input--> 
-                <input type="text" id="userName" placeholder="Digite o seu nome de usuário"> <!-- input -->
+                <label for="userName">Nome</label> <!-- texto em cima do input--> 
+                <input type="text" id="userName" placeholder="Digite o seu nome"> <!-- input -->
                 <i class="gg-check-o"></i>  <!-- sao os icones q irao dentro do input -->
                 <i class="gg-danger"></i>  
-                <small>mensagem de erro</small> <!-- aqui vai ter a mensagem de erro -->
+                <small></small> <!-- aqui vai ter a mensagem de erro -->
             </div>
 
             <div class="form-control">
@@ -39,7 +41,7 @@
                 <input type="text" id="email" placeholder="Digite o seu email"> <!-- input -->
                 <i class="gg-check-o"></i>  <!-- sao os icones q irao dentro do input -->
                 <i class="gg-danger"></i>  
-                <small>mensagem de erro</small> <!-- aqui vai ter a mensagem de erro -->
+                <small></small> <!-- aqui vai ter a mensagem de erro -->
             </div>
 
             <div class="form-control">
@@ -47,7 +49,7 @@
                 <input type="password" id="password" placeholder="Digite a sua senha"> <!-- input -->
                 <i class="gg-check-o"></i>  <!-- sao os icones q irao dentro do input -->
                 <i class="gg-danger"></i>  
-                <small>mensagem de erro</small> <!-- aqui vai ter a mensagem de erro -->
+                <small></small> <!-- aqui vai ter a mensagem de erro -->
             </div>
 
             <div class="form-control">
@@ -55,7 +57,7 @@
                 <input type="password" id="passwordConfirm" placeholder="Confirme a sua senha"> <!-- input -->
                 <i class="gg-check-o"></i>  <!-- sao os icones q irao dentro do input -->
                 <i class="gg-danger"></i>  
-                <small>mensagem de erro</small> <!-- aqui vai ter a mensagem de erro -->
+                <small></small> <!-- aqui vai ter a mensagem de erro -->
 
             </div>
 
@@ -64,7 +66,7 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
     
 </body>
 </html>

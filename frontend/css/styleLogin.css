@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 20px;
+}
+
+body {
+    background: linear-gradient(90deg, #845EC2, #FF9671);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form button{
+    background-color: rgb(185, 55, 211);
+    border: 2px solid rgb(185, 55, 211);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: azure;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.form{
+    padding: 20px;
+    padding-top: 1px;
+}
+.container {
+    border-radius: 10px;
+    background-color: #ffffff50;
+    height: auto;
+    width: 400px;
+    max-width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding-bottom: 5px;
+    /* padding: 24px; */
+}
+
+.form-control{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-control label{
+    font-size: 14px;
+}
+
+.form-control {
+    position: relative;
+    /* padding: 12px; */
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+}
+
+.form-control i {
+    position: absolute;
+    top: 16px;
+    left: 93%;
+    visibility: hidden;
+}
+
+.form-control small{
+    font-size: 14px;
+    bottom: -20px;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    
+}
+
+.form-control.error small{
+    color: #e74c3c;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control.error i.gg-danger {
+    border-color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control.success i.gg-check-o {
+    border-color: #2ecc71;
+    visibility: visible;
+}
+
+.criar {
+    margin: 10px;
+    font-size: 12px;
+}
+
+#linkCadastro {
+    left: 190px;
+    position: relative;
+}
+
+/* essa parte serve para tirar a borda do input quando o usuario digitar.*/
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}

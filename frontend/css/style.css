@@ -14,18 +14,41 @@ body {
     align-items: center;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header h1 {
+    /* text-align: center; */
+    /* background-color: #e733a2ea; */
+    border-radius: 50px;
+    /* width: 40%;  */
+    margin-left: 100px;
+    /* padding: 10px; */
+   
+}
+
+.header a {
+    position: absolute;
+    top: 100px;
+}
+
+#arrow{
+    color: black;
+}
 .container {
-    background-color: #fafafa;
+    background-color: #fafafa50;
     /* border: 1px solid rgb(61, 60, 60); */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 400px;
     max-width: 100%;
-    overflow: hidden;
+    
 }
 
-.header {
-    background-color: #eee;
+.header {    
     padding: 20px;
 }
 
@@ -103,22 +126,9 @@ body {
 }
 
 .form-control.error small {
-    border-color: #e74c3c;
+    color: #e74c3c;
     visibility: visible;
 }
-    
-
-
-    
-
-
-
-
-
-
-
-
-
 
 /* essa parte serve para tirar a borda do input quando o usuario digitar.*/
 textarea:focus, input:focus {

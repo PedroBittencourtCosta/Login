@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./css/styleLogin.css">
+    <!-- links dos icones-->
+    <link href='https://css.gg/danger.css' rel='stylesheet'>
+    <link href='https://css.gg/check-o.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Login</h1>
+        </div>
+
+        <hr>
+
+        <form class="form">
+
+            <div class="form-control">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" placeholder="Insira o nome de usuário">
+                <i class="gg-check-o"></i>  <!-- sao os icones q irao dentro do input -->
+                <i class="gg-danger"></i>
+                <small>erro message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="text" id="password" placeholder="Insira a senha">
+                <i class="gg-check-o"></i>  <!-- sao os icones q irao dentro do input -->
+                <i class="gg-danger"></i>
+                <small>erro message</small>
+            </div>
+
+            <button type="submit">Logar</button>
+
+        </form>
+
+        <div class="criar">
+            <label for="cadastrar">Não possui uma conta?</label>
+
+            <label id="linkCadastro" for=""><a href="./index.html" id="cadastrar">Criar uma conta</a></label>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/login.js"></script>
+    
+</body>
+</html>
